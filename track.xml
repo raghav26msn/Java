@@ -1,0 +1,20 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+	<!-- <import resource="classpath:tracktemplates.xml" /> -->
+	<stream name="tracks" format="fixedlength">
+		<record name="generalShipmentInformation" class="com.org.beanio.BX" minOccurs="0" maxOccurs="1">
+			<field name="BXRECID" length="3" rid="true" literal="BX" lenientPadding="true" minOccurs="1" />
+			<field name="transactionSetPurposeCode" length="2" lenientPadding="true" minOccurs="1" />
+			<field name="transportationMethodTypeCode" length="2" lenientPadding="true" minOccurs="1" />
+			<field name="shipmentMethodOfPaymentCode" length="2" lenientPadding="true" minOccurs="1" />
+			<field name="shipmentIdentificationNumber" length="30" lenientPadding="true" minOccurs="0" />
+			<field name="standardCarrierAlphaCode" length="4" lenientPadding="true" minOccurs="0" />
+			<field name="weightUnitCode" length="1" lenientPadding="true" minOccurs="0" />
+			<field name="shipmentQualifier" length="1" lenientPadding="true" minOccurs="0" />
+			<field name="sectionSevenCode" length="1" lenientPadding="true" minOccurs="0" />
+			<field name="capacityLoadCode" length="1" lenientPadding="true" minOccurs="0" />
+			<field name="customsDocumentationHandlingCode" length="2" lenientPadding="true" minOccurs="0" />
+			<field name="confidentialBillingRequestCode" length="1" lenientPadding="true" minOccurs="0" />
+			<field name="goodsAndServicesTaxReasonCode" length="1" lenientPadding="true" minOccurs="0" />
+		</record>
+	</stream>
+</beanio>
